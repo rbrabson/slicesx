@@ -16,7 +16,7 @@ func Rotate[T any](slice []T, num int) []T {
 	} else {
 		index = num % length
 	}
-	// No rotation needed
+
 	if index == 0 {
 		return slice
 	}

@@ -13,6 +13,7 @@ go get github.com/rbrabson/slicesx
 ### Rotate
 
 The `Rotate` function rotates a slice by the specified number of elements:
+
 - If the number is positive, the last N elements move to the beginning.
 - If the number is negative, the first N elements move to the end.
 

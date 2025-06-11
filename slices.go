@@ -4,12 +4,12 @@ package slicesx
 // A positive num rotates the slice so that the last num elements move to the beginning.
 // A negative num rotates the slice so that the last |num| elements move to the beginning.
 func Rotate[T any](slice []T, num int) []T {
-	if len(slice) == 0 {
-		return slice
-	}
-
 	// Get the length of the slice
 	length := len(slice)
+
+	if length == 0 {
+		return slice
+	}
 
 	var index int
 	if num < 0 {
